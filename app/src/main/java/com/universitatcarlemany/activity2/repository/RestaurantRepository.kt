@@ -16,6 +16,6 @@ class RestaurantRepository(private val context: Context) {
     }
 
     fun getRestaurantById(id: String): Restaurant? {
-        return getRestaurants().find { it.id == id }
+        return getRestaurants().find { it.getName() == id }
     }
 }

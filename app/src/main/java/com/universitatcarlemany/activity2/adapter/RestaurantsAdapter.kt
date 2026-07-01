@@ -24,7 +24,7 @@ class RestaurantsAdapter(
 
     override fun onBindViewHolder(holder: RestaurantViewHolder, position: Int) {
         val restaurant = restaurants[position]
-        holder.nameTextView.text = restaurant.name
+        holder.nameTextView.text = restaurant.getName()
         holder.itemView.setOnClickListener {
             onItemClick(restaurant)
         }

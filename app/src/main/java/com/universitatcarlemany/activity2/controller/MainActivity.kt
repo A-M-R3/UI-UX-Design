@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         
         val adapter = RestaurantsAdapter(restaurants) { selectedRestaurant ->
             val intent = Intent(this, MenuActivity::class.java)
-            intent.putExtra("RESTAURANT_ID", selectedRestaurant.id)
+            intent.putExtra("RESTAURANT_ID", selectedRestaurant.getName())
             startActivity(intent)
         }
         recyclerView.adapter = adapter

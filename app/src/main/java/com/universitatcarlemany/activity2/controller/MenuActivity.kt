@@ -32,12 +32,15 @@ class MenuActivity : AppCompatActivity() {
         if (restaurantId != null) {
             val restaurant = repository.getRestaurantById(restaurantId)
             if (restaurant != null) {
-                restaurantNameText.text = restaurant.name
-                allergyInfoText.text = restaurant.menu?.allergyInfo ?: ""
+                restaurantNameText.text = restaurant.getName()
                 
-                val menuItems = restaurant.menu?.items ?: emptyList()
-                val adapter = MenuAdapter(menuItems)
-                menuRecyclerView.adapter = adapter
+                val menu = restaurant.getMenu()
+                if (menu != null) {
+                    allergyInfoText.text = menu.getAllergyInfo()
+                    val menuItems = menu.getItems()
+                    val adapter = MenuAdapter(menuItems)
+                    menuRecyclerView.adapter = adapter
+                }
             }
         }
     }
