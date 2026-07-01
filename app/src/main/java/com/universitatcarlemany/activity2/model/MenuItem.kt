@@ -3,36 +3,16 @@ package com.universitatcarlemany.activity2.model
 class MenuItem(
     private val id: Int,
     private val name: String,
-    price: Double,
+    private val price: Double,
     private val description: String,
     private val image: String,
-    private var units: Int,
-    private val restaurant: Restaurant
+    private var units: Int
 ) {
-    private var _price = price
-
-    init {
-        // Check if the price is a positive number
-        if (price < 0) {
-            throw IllegalArgumentException("Price must be a positive number")
-        }
-
-        if (units < 0) {
-            throw IllegalArgumentException("Units must be a positive number")
-        }
-
-        setPrice(price)
-    }
-
     fun getId(): Int = id
 
     fun getName(): String = name
 
-    fun getPrice(): Double = _price
-
-    private fun setPrice(value: Double) {
-        _price = Math.round(value * 100.0) / 100.0
-    }
+    fun getPrice(): Double = price
 
     fun getDescription(): String = description
 
@@ -51,6 +31,4 @@ class MenuItem(
     fun isAvailable(): Boolean {
         return units > 0
     }
-
-    fun getRestaurant(): Restaurant = restaurant
 }

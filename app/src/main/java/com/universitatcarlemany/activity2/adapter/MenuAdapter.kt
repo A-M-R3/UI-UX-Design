@@ -26,8 +26,8 @@ class MenuAdapter(
 
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
         val item = menuItems[position]
-        holder.itemNameText.text = item.name
-        holder.itemPriceText.text = item.price.toString()
+        holder.itemNameText.text = item.getName()
+        holder.itemPriceText.text = item.getPrice().toString()
     }
 
     override fun getItemCount() = menuItems.size

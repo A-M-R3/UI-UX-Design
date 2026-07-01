@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Activity2"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".controller.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Activity2">
@@ -23,6 +23,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".controller.MenuActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Activity2" />
     </application>
 
 </manifest>

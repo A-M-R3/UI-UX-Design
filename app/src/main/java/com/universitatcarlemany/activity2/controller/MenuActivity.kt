@@ -14,6 +14,8 @@ class MenuActivity : AppCompatActivity() {
     private lateinit var repository: RestaurantRepository
     private lateinit var menuRecyclerView: RecyclerView
     private lateinit var restaurantNameText: TextView
+    private lateinit var restaurantAddressText: TextView
+    private lateinit var restaurantHoursText: TextView
     private lateinit var allergyInfoText: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +25,8 @@ class MenuActivity : AppCompatActivity() {
         repository = RestaurantRepository(this)
         menuRecyclerView = findViewById(R.id.menuRecyclerView)
         restaurantNameText = findViewById(R.id.detailRestaurantName)
+        restaurantAddressText = findViewById(R.id.detailRestaurantAddress)
+        restaurantHoursText = findViewById(R.id.detailRestaurantHours)
         allergyInfoText = findViewById(R.id.detailAllergyInfo)
 
         menuRecyclerView.layoutManager = LinearLayoutManager(this)
@@ -33,11 +37,13 @@ class MenuActivity : AppCompatActivity() {
             val restaurant = repository.getRestaurantById(restaurantId)
             if (restaurant != null) {
                 restaurantNameText.text = restaurant.getName()
+                restaurantAddressText.text = restaurant.getAddress()
+                restaurantHoursText.text = getString(R.string.restaurant_hours, restaurant.getOpeningTime(), restaurant.getClosingTime())
                 
                 val menu = restaurant.getMenu()
                 if (menu != null) {
-                    allergyInfoText.text = menu.getAllergyInfo()
-                    val menuItems = menu.getItems()
+                    allergyInfoText.text = menu.getAllergies()
+                    val menuItems = menu.getAllItems()
                     val adapter = MenuAdapter(menuItems)
                     menuRecyclerView.adapter = adapter
                 }

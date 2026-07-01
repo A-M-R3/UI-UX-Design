@@ -1,10 +1,9 @@
 package com.universitatcarlemany.activity2.model
 
 class Menu(
-    private var allergies: String = ""
+    private var allergies: String = "",
+    private val items: MutableList<MenuItem> = mutableListOf()
 ) {
-    private val items = mutableListOf<MenuItem>()
-
     fun getAllergies(): String {
         return allergies
     }

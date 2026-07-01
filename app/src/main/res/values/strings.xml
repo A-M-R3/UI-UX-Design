@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Task2</string>
+    <string name="restaurant_hours">Horario: %1$s - %2$s</string>
 </resources>

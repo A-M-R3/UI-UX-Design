@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val restaurants = repository.getRestaurants()
         
         val adapter = RestaurantsAdapter(restaurants) { selectedRestaurant ->
-            val intent = Intent(this, MenuActivity::class.java)
+            val intent = Intent(this@MainActivity, MenuActivity::class.java)
             intent.putExtra("RESTAURANT_ID", selectedRestaurant.getName())
             startActivity(intent)
         }
