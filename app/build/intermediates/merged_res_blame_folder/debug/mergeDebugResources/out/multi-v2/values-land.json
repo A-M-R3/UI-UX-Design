@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.universitatcarlemany.activity2.app-mergeDebugResources-55:/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/home/deck/.gradle/caches/transforms-4/fa2789d3de58dc6f7fac29ec40776457/transformed/appcompat-1.7.1/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                }
+            ]
+        }
+    ]
+}

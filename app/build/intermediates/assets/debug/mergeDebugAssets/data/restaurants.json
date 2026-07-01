@@ -1,0 +1,152 @@
+{
+   "restaurants":[
+      {
+         "id":1,
+         "name":"Sakura Sushi Zen",
+         "image":"https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+         "address":"Calle de la Luna 12, Madrid",
+         "openingTime":"13:00",
+         "closingTime":"23:00",
+         "menu":{
+            "allergies":"Contiene pescado crudo, soja, gluten y sésamo.",
+            "items":[
+               {
+                  "id":1,
+                  "name":"Maki de Salmón",
+                  "price":12,
+                  "description":"Rollos de arroz rellenos de salmón fresco y alga nori.",
+                  "image":"https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=80",
+                  "units":500
+               },
+               {
+                  "id":2,
+                  "name":"Nigiri de Atún",
+                  "price":15,
+                  "description":"Finas láminas de atún sobre base de arroz avinagrado.",
+                  "image":"https://images.unsplash.com/photo-1583623025817-d180a2221d0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                  "units":400
+               },
+               {
+                  "id":3,
+                  "name":"Tempura de Verduras",
+                  "price":10,
+                  "description":"Variedad de verduras fritas en un rebozado ligero y crujiente.",
+                  "image":"https://images.unsplash.com/photo-1615361200141-f4500043e95d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                  "units":600
+               }
+            ]
+         }
+      },
+      {
+         "id":2,
+         "name":"La Taberna del Capitán",
+         "image":"https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+         "address":"Plaza Mayor 5, Sevilla",
+         "openingTime":"12:00",
+         "closingTime":"23:30",
+         "menu":{
+            "allergies":"Puede contener trazas de frutos secos, huevo y mariscos.",
+            "items":[
+               {
+                  "id":11,
+                  "name":"Tortilla de Patatas",
+                  "price":8,
+                  "description":"Clásica tortilla española hecha con huevos, patatas y cebolla.",
+                  "image":"https://images.unsplash.com/photo-1510629954389-c1e0da47d4ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                  "units":1000
+               },
+               {
+                  "id":12,
+                  "name":"Jamón Ibérico de Bellota",
+                  "price":24,
+                  "description":"Ración de jamón de la máxima calidad cortado a cuchillo.",
+                  "image":"https://images.unsplash.com/photo-1544124499-58912cbddaad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                  "units":300
+               },
+               {
+                  "id":13,
+                  "name":"Croquetas de Jamón",
+                  "price":10,
+                  "description":"Croquetas caseras cremosas por dentro y crujientes por fuera.",
+                  "image":"https://images.unsplash.com/photo-1563823249110-38f32144d13e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                  "units":800
+               }
+            ]
+         }
+      },
+      {
+         "id":3,
+         "name":"Seoul BBQ Palace",
+         "image":"https://images.unsplash.com/photo-1512485600893-b08ec1d59f1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+         "address":"Avenida Diagonal 88, Barcelona",
+         "openingTime":"13:30",
+         "closingTime":"22:30",
+         "menu":{
+            "allergies":"Contiene soja, sésamo y picante.",
+            "items":[
+               {
+                  "id":21,
+                  "name":"Bulgogi",
+                  "price":18,
+                  "description":"Ternera marinada en salsa dulce de soja a la parrilla.",
+                  "image":"https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                  "units":450
+               },
+               {
+                  "id":22,
+                  "name":"Bibimbap",
+                  "price":14,
+                  "description":"Bol de arroz con vegetales, carne, huevo y pasta de chile gochujang.",
+                  "image":"https://images.unsplash.com/photo-1585032226651-759b368d7246?ixlib=rb-1.2.1&auto=format&fit=crop&w=1259&q=80",
+                  "units":600
+               },
+               {
+                  "id":23,
+                  "name":"Kimchi casero",
+                  "price":6,
+                  "description":"Col fermentada tradicional coreana con especias picantes.",
+                  "image":"https://images.unsplash.com/photo-1583224964978-2257b960c3d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                  "units":700
+               }
+            ]
+         }
+      },
+      {
+         "id":4,
+         "name":"Taj Mahal Spices",
+         "image":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+         "address":"Calle Gran Vía 45, Bilbao",
+         "openingTime":"13:00",
+         "closingTime":"23:00",
+         "menu":{
+            "allergies":"Contiene lácteos, frutos secos y muchas especias.",
+            "items":[
+               {
+                  "id":31,
+                  "name":"Pollo Tikka Masala",
+                  "price":16,
+                  "description":"Trozos de pollo marinados en yogur y especias en salsa cremosa de tomate.",
+                  "image":"https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&auto=format&fit=crop&w=1211&q=80",
+                  "units":550
+               },
+               {
+                  "id":32,
+                  "name":"Cordero Rogan Josh",
+                  "price":19,
+                  "description":"Curry de cordero tierno cocinado con una mezcla aromática de especias.",
+                  "image":"https://images.unsplash.com/photo-1542367592-8849f530cd9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                  "units":400
+               },
+               {
+                  "id":33,
+                  "name":"Naan de Ajo",
+                  "price":4,
+                  "description":"Pan plano tradicional indio horneado con ajo y mantequilla.",
+                  "image":"https://images.unsplash.com/photo-1601356616077-695728ecf769?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                  "units":1200
+               }
+            ]
+         }
+      }
+   ]
+}
